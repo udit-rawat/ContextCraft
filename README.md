@@ -112,16 +112,25 @@ The ContextCraft pipeline follows the stages depicted in the diagram:
 
 ```
 ContextCraft/
+├── LICENSE              # License file for the project
+├── README.md            # Documentation for the project
+├── __pycache__/         # Compiled Python files
 ├── app.py               # Main Streamlit application
-├── core/                # Core functionality (parsing, embedding, etc.)
-├── data/                # Placeholder for input PDFs
-├── faiss_store/         # Prebuilt FAISS indexes
+├── contexcraft/         # Core functionality and code (venv)
+├── embeddings/          # Folder for storing generated embeddings
 ├── notebooks/           # Folder for Jupyter Notebooks
 │   ├── parser.ipynb     # Notebook for PDF parsing and chunk creation
 │   ├── query_engine.ipynb # Notebook for setting up query engine
 │   ├── vector_generator.ipynb # Notebook for generating vectors
 │   └── vector_store.ipynb # Notebook for storing vectors in FAISS
-└── README.md            # Documentation
+├── overview.png         # Architecture diagram for ContextCraft
+├── parsed_content/      # Folder for parsed content from PDFs
+├── pdfs.zip             # Compressed PDF files to be processed
+├── pdfs/                # Folder for storing PDFs to be parsed
+├── requirements.txt     # List of dependencies for the project
+├── retriever.py         # Script for the retriever function
+└── vector_store/        # Folder for storing FAISS index and vector data
+
 ```
 
 ---
@@ -135,12 +144,6 @@ ContextCraft/
    - **`vector_generator.ipynb`**: Generate vector embeddings for the document chunks.
    - **`vector_store.ipynb`**: Store the embeddings in a FAISS index.
 3. The system will process the PDF, generate embeddings, store them in FAISS, and allow for efficient query answering.
-
----
-
-## 🖼️ Diagram Reference
-
-The architecture diagram is shown above, outlining the flow from PDF parsing to response generation.
 
 ---
 
@@ -160,5 +163,3 @@ The architecture diagram is shown above, outlining the flow from PDF parsing to 
 This project is licensed under the MIT License.
 
 ---
-
-Let me know if you need further modifications!
