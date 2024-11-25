@@ -1,7 +1,3 @@
-Here’s the updated README with the instructions to run the four notebooks (`parser.ipynb`, `query_engine.ipynb`, `vector_generator.ipynb`, and `vector_store.ipynb`):
-
----
-
 # ContextCraft: A Retrieval-Augmented Generation Framework
 
 ![ContextCraft Overview](overview.png)
