@@ -1,0 +1,6 @@
+__pycache__/
+contexcraft/
+embeddings/
+parsed_content/
+pdfs/
+vector_store/
