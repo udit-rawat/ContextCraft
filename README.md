@@ -155,6 +155,7 @@ ContextCraft/
    git checkout -b feature-name
    ```
 3. Commit your changes and create a pull request.
+4. Refer to the whitepaper pdf provided for more ways to experiment with this project.
 
 ---
 
